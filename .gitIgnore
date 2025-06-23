@@ -1,2 +1,11 @@
 .qodo
 .vscode
+launch.json
+senting.json
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+*.idea
+*.class
