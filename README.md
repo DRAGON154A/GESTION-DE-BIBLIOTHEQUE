@@ -1,2 +1,75 @@
 # GESTION-DE-BIBLIOTHEQUE
 Bibliotheque_Numerique_en_colaboration
+
+## Bibliothécaires
+    • bibliothecaire_id 
+    • nom 
+    • prenom 
+    • email
+    • tel
+    • mot_de_passe
+## Membre
+    • membre_id 
+    • matricule
+    • nom 
+    • prenom 
+    • email
+    • adresse 
+    • telephone 
+    • date_inscription 
+    • date_naissance 
+    • est_actif 
+## Administrateur
+    • administrateur_id 
+    • nom 
+    • prenom 
+    • niveau_privilege 
+    • mot_de_passe
+## Livre
+    • livre_id 
+    • titre 
+    • auteur 
+    • isbn 
+    • annee_publication 
+    • editeur 
+    • langue
+    • nombre_pages 
+    • resume 
+    • id_categorie 
+    • numéro_exemplaire
+## Catégorie
+    • categorie_id 
+    • nom_categorie 
+    • description 
+## Exemplaire
+    • exemplaire_id 
+    • id_livre 
+    • code_barre 
+    • id_statut 
+    • date_acquisition 
+    • emplacement 
+## Emprunt
+    • emprunt_id 
+    • id_membre 
+    • id_exemplaire 
+    • date_emprunt 
+    • date_retour_prevue 
+    • date_retour_reelle 
+    • id_bibliothecaire_emprunt 
+    • id_bibliothecaire_retour 
+    • amende_due 
+## Historique
+    • historique_id 
+    • date_action 
+    • id_acteur 
+    • type_action 
+    • details_action 
+    • table_affectee 
+    • id_element_affecte 
+## Statistiques
+    • stat_id 
+    • date_statistique 
+    • type_statistique 
+    • valeur 
+    • description 
+    • id_reference
