@@ -1,7 +1,7 @@
-.qodo
-.vscode
 launch.json
 senting.json
+.qodo
+.vscode
 *.log
 *.tmp
 *.bak
