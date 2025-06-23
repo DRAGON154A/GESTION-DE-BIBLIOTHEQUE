@@ -1,14 +1,16 @@
 # GESTION-DE-BIBLIOTHEQUE
-Bibliotheque_Numerique_en_colaboration
+Application desctop pour la gerstion d'une bioblioteque en java utilisant javafx
 
-## Bibliothécaires
+## MODEL
+
+### Bibliothécaires
     • bibliothecaire_id 
     • nom 
     • prenom 
     • email
     • tel
     • mot_de_passe
-## Membre
+### Membre
     • membre_id 
     • matricule
     • nom 
@@ -19,13 +21,13 @@ Bibliotheque_Numerique_en_colaboration
     • date_inscription 
     • date_naissance 
     • est_actif 
-## Administrateur
+### Administrateur
     • administrateur_id 
     • nom 
     • prenom 
     • niveau_privilege 
     • mot_de_passe
-## Livre
+### Livre
     • livre_id 
     • titre 
     • auteur 
@@ -37,18 +39,18 @@ Bibliotheque_Numerique_en_colaboration
     • resume 
     • id_categorie 
     • numéro_exemplaire
-## Catégorie
+### Catégorie
     • categorie_id 
     • nom_categorie 
     • description 
-## Exemplaire
+### Exemplaire
     • exemplaire_id 
     • id_livre 
     • code_barre 
     • id_statut 
     • date_acquisition 
     • emplacement 
-## Emprunt
+### Emprunt
     • emprunt_id 
     • id_membre 
     • id_exemplaire 
@@ -58,7 +60,7 @@ Bibliotheque_Numerique_en_colaboration
     • id_bibliothecaire_emprunt 
     • id_bibliothecaire_retour 
     • amende_due 
-## Historique
+### Historique
     • historique_id 
     • date_action 
     • id_acteur 
@@ -66,10 +68,12 @@ Bibliotheque_Numerique_en_colaboration
     • details_action 
     • table_affectee 
     • id_element_affecte 
-## Statistiques
+### Statistiques
     • stat_id 
     • date_statistique 
     • type_statistique 
     • valeur 
     • description 
     • id_reference
+
+## licence
