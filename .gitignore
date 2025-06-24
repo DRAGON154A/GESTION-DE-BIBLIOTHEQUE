@@ -1,6 +1,7 @@
 launch.json
-senting.json
+settings.json
 .qodo
+.classpath
 .vscode
 *.log
 *.tmp
@@ -8,4 +9,3 @@ senting.json
 *.swp
 *.DS_Store
 *.idea
-*.class
