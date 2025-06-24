@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1800.0" styleClass="background" stylesheets="@style.fxml.css" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signupControler">
+   <children>
+      <Pane layoutX="504.0" layoutY="163.0" prefHeight="699.0" prefWidth="793.0" styleClass="login_card" stylesheets="@style.fxml.css">
+         <children>
+            <Label layoutX="300.0" layoutY="28.0" prefHeight="68.0" prefWidth="209.0" style="-fx-alignment: center; -fx-font-family: arial; -fx-font-size: 28;" text="INSCRIPTION" />
+            <TextField id="name" layoutX="65.0" layoutY="107.0" prefHeight="52.0" prefWidth="290.0" promptText="nom" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="surname" layoutX="65.0" layoutY="169.0" prefHeight="52.0" prefWidth="290.0" promptText="prenom" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <Hyperlink layoutX="265.0" layoutY="612.0" prefHeight="22.0" prefWidth="280.0" style="-fx-alignment: center; -fx-font-size: 15;" text="Je n'ai pas de compte" />
+            <TextField id="email" layoutX="65.0" layoutY="235.0" prefHeight="52.0" prefWidth="290.0" promptText="example@gmail.com" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="confirm" layoutX="400.0" layoutY="298.0" prefHeight="52.0" prefWidth="290.0" promptText=" mot de passe" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="password" layoutX="400.0" layoutY="235.0" prefHeight="52.0" prefWidth="290.0" promptText=" mot de passe" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <Button id="submit" layoutX="333.0" layoutY="533.0" mnemonicParsing="false" onAction="#submit" prefHeight="52.0" prefWidth="143.0" style="-fx-background-radius: 20px;" stylesheets="@style.fxml.css" text="SOUMETTRE" />
+            <TextField id="tel" layoutX="65.0" layoutY="298.0" prefHeight="52.0" prefWidth="290.0" promptText="6xxxxxxxx" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="birtday" layoutX="65.0" layoutY="363.0" prefHeight="52.0" prefWidth="290.0" promptText="date de naissance" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="country" layoutX="400.0" layoutY="107.0" prefHeight="52.0" prefWidth="290.0" promptText="pays" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+            <TextField id="city" layoutX="400.0" layoutY="169.0" prefHeight="52.0" prefWidth="290.0" promptText="ville" style="-fx-background-radius: 10px; -fx-font-size: 18px;" />
+</children>
+      </Pane>
+   </children>
+</fx:root>
