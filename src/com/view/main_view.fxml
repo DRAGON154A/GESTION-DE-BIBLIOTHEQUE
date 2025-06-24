@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.controler.MainViewController"
+           fx:id="rootPane">
+
+    <!-- ImageView : image de fond -->
+    <ImageView fx:id="backgroundImage" preserveRatio="false">
+        <image>
+            <Image url="@/com/image/bg1.jpg"/>
+        </image>
+    </ImageView>
+
+    <!-- Contenu centré -->
+    <VBox spacing="20" alignment="CENTER" maxWidth="500" style="-fx-padding: 30;">
+        <!-- Logo -->
+        <ImageView fitHeight="100" fitWidth="100" preserveRatio="true">
+            <image>
+                <Image url="@/com/image/logo.jpg"/>
+            </image>
+        </ImageView>
+
+        <Label text="Bienvenue dans le gestionnaire de bibliothèque de l'IAI"
+               wrapText="true" textAlignment="CENTER"
+               style="-fx-font-size: 20px; -fx-text-fill: white;" />
+
+        <Button text="Se connecter" onAction="#handleLoginButton"
+                style="-fx-background-color: #3498db; -fx-text-fill: white;" />
+        <Button text="S'inscrire" onAction="#handleRegisterButton"
+                style="-fx-background-color: #2ecc71; -fx-text-fill: white;" />
+
+        <Hyperlink text="À propos de l'application"
+                   onAction="#handleInfoLink"
+                   style="-fx-text-fill: white;" />
+    </VBox>
+</StackPane>
