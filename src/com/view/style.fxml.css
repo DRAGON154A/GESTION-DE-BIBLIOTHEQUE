@@ -1,0 +1,23 @@
+.button
+{
+    -fx-background-color: #1b1b1ba2;
+    -fx-text-fill: #ffffff;
+}
+.button:hover
+{
+    -fx-background-color: #525252;
+    -fx-baground-radius: 50px;
+
+}
+.background
+{
+    -fx-background-image: url("./image/Bibliotheque_003.jpg");
+}
+.login_card
+{
+    -fx-background-color: #6b6b6bcb;
+    -fx-background-radius: 20px;
+    -fx-padding: 20px;
+    -fx-border-color: #964300;
+    -fx-border-width: 2px;
+}
