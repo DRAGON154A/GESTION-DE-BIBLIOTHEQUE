@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class NavigationHelper {
 
-	public void changerPage(Node eventSource,String cheminFileFxml,String titre)
+	public static void changerPage(Node eventSource,String cheminFileFxml,String titre)
 	{
 		try
 		{

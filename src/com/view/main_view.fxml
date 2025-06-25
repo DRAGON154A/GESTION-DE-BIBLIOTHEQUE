@@ -11,7 +11,7 @@
 
 <StackPane xmlns="http://javafx.com/javafx/17"
            xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="com.controler.MainViewController"
+           fx:controller="com.controller.MainViewController"
            fx:id="rootPane">
 
     <!-- ImageView : image de fond -->

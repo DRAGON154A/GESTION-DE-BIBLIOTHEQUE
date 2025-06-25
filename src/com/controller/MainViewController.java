@@ -1,9 +1,12 @@
-package com.controler;
+package com.controller;
 
 import java.io.IOException;
 
+import com.utils.NavigationHelper;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
@@ -23,7 +26,7 @@ public class MainViewController {
 	
 	@FXML
 	public void handleLoginButton(ActionEvent event) throws IOException{
-		
+		NavigationHelper.changerPage((Node) event.getSource(), "../view/login_view.fxml", "Connexion");
 	}
 	
 	@FXML

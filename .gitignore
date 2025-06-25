@@ -1,11 +1,1 @@
-launch.json
-settings.json
-.qodo
-.classpath
-.vscode
-*.log
-*.tmp
-*.bak
-*.swp
-*.DS_Store
-*.idea
+/bin/

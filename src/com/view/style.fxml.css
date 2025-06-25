@@ -1,23 +1,66 @@
-.button
-{
-    -fx-background-color: #1b1b1ba2;
-    -fx-text-fill: #ffffff;
+/* Fond avec image adaptée à la taille de la fenêtre */
+.background {
+    -fx-background-image: url("/image/Bibliotheque_003.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
 }
-.button:hover
-{
-    -fx-background-color: #525252;
-    -fx-baground-radius: 50px;
 
-}
-.background
-{
-    -fx-background-image: url("./image/Bibliotheque_003.jpg");
-}
-.login_card
-{
-    -fx-background-color: #6b6b6bcb;
+/* Carte de connexion */
+.login_card {
+    -fx-background-color: rgba(107, 107, 107, 0.8);
     -fx-background-radius: 20px;
-    -fx-padding: 20px;
+    -fx-padding: 30px;
     -fx-border-color: #964300;
     -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 6);
+}
+
+/* Boutons */
+.button {
+    -fx-background-color: #1b1b1ba2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #525252;
+    -fx-background-radius: 10px;
+}
+
+/* Champs texte */
+.text-field,
+.password-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #1f1f1f;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Hyperliens */
+.hyperlink {
+    -fx-text-fill: #0077cc;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #005fa3;
+}
+
+/* Pour VBox et HBox */
+.hbox, .vbox {
+    -fx-alignment: center;
+    -fx-spacing: 15;
 }

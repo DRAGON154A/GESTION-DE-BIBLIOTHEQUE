@@ -1,1 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.controller.LoginController"
+            styleClass="background"
+            stylesheets="@style.fxml.css">
+
+    <children>
+        <!-- Carte de connexion centrée -->
+        <Pane styleClass="login_card"
+              AnchorPane.topAnchor="100.0"
+              AnchorPane.bottomAnchor="100.0"
+              AnchorPane.leftAnchor="300.0"
+              AnchorPane.rightAnchor="300.0">
+
+            <children>
+                <VBox spacing="20" alignment="CENTER" prefWidth="Infinity" prefHeight="Infinity">
+                    <children>
+                        <!-- Titre -->
+                        <Label fx:id="titleViewId" text="CONNEXION"
+                               style="-fx-font-size: 28px; -fx-text-fill: #003366;" />
+
+                        <!-- Champ Login -->
+                        <HBox alignment="CENTER_LEFT" spacing="10" maxWidth="400">
+                            <children>
+                                <ImageView fitWidth="20" fitHeight="20">
+                                    <image>
+                                        <Image url="@/image/logo1.png"/>
+                                    </image>
+                                </ImageView>
+                                <TextField fx:id="textFieldName"
+                                           promptText="Nom d'utilisateur ou email"
+                                           maxWidth="300"/>
+                            </children>
+                        </HBox>
+
+                        <!-- Champ mot de passe avec bascule visibilité -->
+                        <HBox alignment="CENTER_LEFT" spacing="10" maxWidth="400">
+                            <children>
+                                <ImageView fitWidth="20" fitHeight="20">
+                                    <image>
+                                        <Image url="@/image/logo2.png"/>
+                                    </image>
+                                </ImageView>
+                                <StackPane>
+                                    <children>
+                                        <PasswordField fx:id="passwordField"
+                                                       promptText="Mot de passe"
+                                                       maxWidth="300"/>
+                                        <TextField fx:id="passwordVisibleField"
+                                                   promptText="Mot de passe"
+                                                   visible="false"
+                                                   managed="false"
+                                                   maxWidth="300"/>
+                                    </children>
+                                </StackPane>
+                                <Button fx:id="actionPasswordVisibilityButton" text="👁" onAction="#actionPasswordVisibility"/>
+                            </children>
+                        </HBox>
+
+                        <!-- Bouton Connexion -->
+                        <Button text="SOUMETTRE" onAction="#fonctionLogin"/>
+
+                        <!-- Lien vers inscription -->
+                        <Hyperlink text="Je n'ai pas de compte" onAction="#gotoRegister"/>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
