@@ -1,0 +1,58 @@
+/* Appliquer le fond de l'application via StackPane */
+#rootPane {
+    -fx-background-image: url("/application/ressources/image/bg1.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+/* Style général pour les boutons */
+.button {
+    -fx-background-color: linear-gradient(to right, #2a5298, #1e3c72);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 10 30 10 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #b6c6e0, 4, 0.5, 0, 2);
+    -fx-border-color: #1e3c72;
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+}
+
+/* Bouton Se connecter */
+.button:focused, .button:pressed {
+    -fx-opacity: 0.85;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298);
+    -fx-effect: dropshadow(gaussian, #2a5298, 8, 0.7, 0, 4);
+}
+
+/* Lien Hyperlink */
+.hyperlink {
+    -fx-text-fill: #f0f1f3;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+    -fx-padding: 10 0 0 0;
+    -fx-font-weight: bold;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #5480d1;
+    -fx-cursor: hand;
+}
+
+/* Texte principal */
+.label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a5298; /* Bleu profond */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-effect: dropshadow(gaussian, #b6c6e0, 4, 0.5, 0, 2);
+    -fx-padding: 10 0 20 0;
+    -fx-alignment: center;
+}
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */

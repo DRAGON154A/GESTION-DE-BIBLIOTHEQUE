@@ -1,0 +1,75 @@
+/* Fond avec image adaptée à la taille de la fenêtre */
+.background {
+    -fx-background-image: url("/application/ressources/image/Bibliotheque_003.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Carte de connexion */
+.login_card {
+    -fx-background-color: rgba(255,255,255,0.92);
+    -fx-background-radius: 20px;
+    -fx-padding: 30px;
+    -fx-border-color: #964300;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.18), 10, 0, 0, 6);
+}
+
+/* Titre de la carte */
+.login_title {
+    -fx-font-size: 28px;
+    -fx-text-fill: #003366;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Boutons */
+.button {
+    -fx-background-color: linear-gradient(to right, #2a5298, #1e3c72);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-padding: 8 30 8 30;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Champs texte */
+.text-field,
+.password-field {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #1f1f1f;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Hyperliens */
+.hyperlink {
+    -fx-text-fill: #2a5298;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #1e3c72;
+}
+
+/* Pour VBox et HBox */
+.hbox, .vbox {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+}
